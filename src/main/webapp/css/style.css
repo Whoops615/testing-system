@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(79, 80, 156);
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*  header ======================================== */
+.header {
+	height: 100px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+	padding: 35px 0;
+	color: ghostwhite;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.header_nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.action {
+	margin-left: 20px;
+}
+
+/*  intro ======================================== */
+.intro_inner {
+	padding-top: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro_content, .intro_menu, .intro_info {
+	flex-basis: 230px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 12px;
+	background-color: rgb(221, 213, 233);
+}
+
+.intro_menu {
+	flex-grow: 0;
+	margin-left: 10px;
+}
+
+.intro_content {
+	flex-grow: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#content_message {
+	text-align: center;
+}
+
+.intro_info {
+	flex-grow: 0;
+	margin-right: 10px;
+}
+
+/* формы шапки ======================================================================================*/
+form[name=f1] button {
+	background-color: rgb(79, 80, 156);
+	color: honeydew;
+	width: 120px;
+	height: 30px;
+	border-radius: 7px;
+	border: none;
+	text-transform: uppercase;
+}
+
+form[name=f1] button:hover {
+	background-color: indigo;
+}
+
+/* меню функций ================================================================================================*/
+form[name=f2] button {
+	background-color: rgb(221, 213, 233);
+	color: rgb(79, 80, 156);
+	height: 30px;
+	border-radius: 7px;
+	border: none;
+	text-transform: uppercase;
+	position: relative;
+	width: 100%;
+	margin-top: 2px;
+	margin-left: 2px;
+	font-weight: 700;
+	text-align: center;
+}
+
+form[name=f2] button:hover {
+	background-color: rgb(201, 181, 231);
+}
+
+/*форма регистрации =============================================================================================*/
+
+.registration {
+	font-family: Tahoma;
+}
+
+#title_registration {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgb(79, 80, 156);
+}
+
+form[name=form_registration] {
+	margin: 0 auto;
+	width: 350px;
+}
+
+.group {
+	margin: 5px;
+	padding: 5px;
+}
+
+form[name=form_registration] input {
+	margin-top: 3px;
+	width: 330px;
+	height: 25px;
+	border-radius: 10px/10px;
+	border: none;
+}
+
+form[name=form_registration] label {
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+.group button {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border: none;
+	height: 30px;
+	border-radius: 7px;
+	font-weight: 700;
+	text-align: center;
+	background-color: rgb(195, 170, 231);
+	width: 100px;
+}
+
+.group button:hover {
+	background-color: rgb(174, 138, 224);
+}
+
+#reg_b_reset {
+	float: left;
+	margin-left: 50px;
+}
+
+#reg_b_submit {
+	float: right;
+	margin-right: 50px;
+}
